@@ -1,0 +1,22 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input id="user" type="text" placeholder="E-mail"/>
+      <input id="password" type="password" placeholder="Senha"/>
+      <button id="subLogin">LOGIN</button>
+    </form>
+    <script>
+        $('#subLogin').click(function(event) {
+            event.preventDefault();
+            if ($('#user').val() === 'rafaelquadra@outlook.com' && $('#password').val() === 'trabalhoember') {
+                alert('USUARIO LOGADO COM SUCESSO!');
+                setTimeout(function() {
+                    location.href = '/home';
+                }, 500)                
+            } else {
+                alert('USUARIO OU SENHA INCORRETOS!');
+            }
+        });
+    </script>
+  </div>
+</div>

@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('ferramentas');
+  this.route('login');
+  this.route('vestuario');
+  this.route('cadastrocliente');
+  this.route('eletrodomesticos');
 });
 
 export default Router;

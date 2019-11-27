@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'frontend-me-shop',
+    podModulePrefix: 'frontend-me-shop/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
