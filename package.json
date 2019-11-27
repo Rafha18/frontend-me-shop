@@ -51,6 +51,8 @@
     "node": "8.* || >= 10.*"
   },
   "dependencies": {
-    "ember-ajax": "^5.0.0"
+    "ember-ajax": "^5.0.0",
+    "ember-simple-auth": "^2.1.0",
+    "ember-simple-auth-token": "^4.0.7"
   }
 }

@@ -1,37 +1,44 @@
-<form class= "formcad" {{action "save" on="submit"}}>
-    <input class="form-control" type="text" placeholder="" readonly>
-    <input class="form-control" type="text" placeholder="" readonly>
-    
-    <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">CADASTRO DE CLIENTES ME-SHOP!</h1>
-    <p class="lead">Faça agora seu cadastro em nosso site! Aproveite as maiores taxas de juros e participe de nossas fakes promoções!</p>
+<form class="formcad" {{action "save" on="submit"}}>
+  <input class="form-control" type="text" placeholder="" readonly>
+  <input class="form-control" type="text" placeholder="" readonly>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">CADASTRO DE CLIENTES ME-SHOP!</h1>
+      <p class="lead">Faça agora seu cadastro em nosso site! Aproveite as maiores taxas de juros e participe de nossas
+        fakes promoções!</p>
+    </div>
   </div>
-</div>
-    
+
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">E-MAIL:</label>
-      {{input value=email placeholder="Email" type="text" class="form-control" }}
-      <!--input type="email" name="email" value="email" class="form-control" id="inputEmail4" placeholder="Informe o E-mail de Cadastro"-->
+
+      {{input  type="email"  value=email class="form-control" placeholder="Informe o E-mail de Cadastro"}}
+
+      <!--input  class="form-control" id="inputEmail4" placeholder="Informe o E-mail de Cadastro"-->
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">SENHA:</label>
-      <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Informe sua Senha">
+      {{input  type="password" name="password" value=password class="form-control" id="inputPassword4" placeholder="Informe sua Senha"}}
+      <!--input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Informe sua Senha"-->
     </div>
   </div>
   <div class="form-group">
     <label for="inputAddress">NOME COMPLETO:</label>
-    <input type="text" class="form-control" name="fullName" id="nome" placeholder="Informe seu Nome Completo">
+    {{input  type="text" name="name" value=name class="form-control" id="inputName" placeholder="Informe seu Nome Completo"}}
+    <!--input type="text" class="form-control" name="name" id="nome" placeholder="Informe seu Nome Completo"-->
   </div>
   <div class="form-group">
     <label for="inputAddress2">ENDEREÇO:</label>
-    <input type="text" class="form-control" id="endereco" name="address" placeholder="Informe Seu Endereço e Número Predial">
+    {{input  type="text" name="address" value=address class="form-control" id="inputAddress" placeholder="Informe Seu Endereço e Número Predial"}}
+    <!--input type="text" class="form-control" id="endereco" name="address" placeholder="Informe Seu Endereço e Número Predial"-->
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputCity">CIDADE:</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="Informe Sua Cidade">
+      {{input  type="text" name="city" value=city class="form-control" id="inputCity" placeholder="Informe Sua Cidade"}}
+      <!--input type="text" class="form-control" id="inputCity" placeholder="Informe Sua Cidade"-->
     </div>
     <div class="form-group col-md-4">
       <label for="inputEstado">ESTADO:</label>
@@ -46,7 +53,8 @@
     </div>
     <div class="form-group col-md-2">
       <label for="inputCEP">CEP:</label>
-      <input type="text" class="form-control" id="cep" placeholder="Informe Seu CEP">
+      {{input  type="text" name="cep" value=cep class="form-control" id="cep" placeholder="Informe Seu CEP"}}
+      <!--input type="text" class="form-control" id="cep" placeholder="Informe Seu CEP"-->
     </div>
   </div>
   <div class="form-group">
